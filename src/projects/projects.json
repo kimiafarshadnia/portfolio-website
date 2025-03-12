@@ -1,0 +1,33 @@
+[
+    {
+      "id":"1",
+      "name": "Portfolio Website",
+      "category": "Web Development",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "html_url": "https://github.com/yourusername/portfolio",
+      "homepage": "https://yourportfolio.com",
+      "image": "/images/projects/reena.png",
+      "description": "A personal portfolio website showcasing my projects and skills."
+    },
+    {
+      "id":"2",
+      "name": "E-Commerce App",
+      "category": "E-Commerce",
+      "technologies": ["React", "Next.js", "Redux", "Stripe"],
+      "html_url": "https://github.com/yourusername/ecommerce-app",
+      "homepage": "https://ecommerce-app.com",
+      "image": "/images/projects/nft.png",
+      "description": "An e-commerce platform with full shopping cart functionality."
+    },
+    {
+      "id":"3",
+      "name": "Dashboard Admin",
+      "category": "Admin Panel",
+      "technologies": ["Next.js", "TypeScript", "Chakra UI"],
+      "html_url": "https://github.com/yourusername/dashboard-admin",
+      "homepage": "https://dashboard-admin.com",
+      "image": "/images/dashboard.jpg",
+      "description": "An admin dashboard with user analytics and management tools."
+    }
+  ]
+  
