@@ -18,7 +18,7 @@ import { SkeletonCard } from "./card/loading/SkeletonCard";
 import NavigationLink from "./shared/feature/NavigationLink";
 import  LocaleSwitcherSelect  from "./shared/feature/LocaleSwitcherSelect";
 import  LocaleSwitcher from "./shared/feature/LocaleSwitcher";
-import { Comments } from "./home/comments";
+import { Comments } from "./home/Comments";
 import { CommentModal } from "./modals/ModalComment";
 export {
     Header,
