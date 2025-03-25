@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { Data } from "Types";
+import Image from "next/image";
 import { withHttps } from "Utils";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { Icon, NavigationLink } from "Components";
 import { faGlobe, faStar } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Image from "next/image";
 
 type Props = {
     project: Data;
@@ -15,6 +16,8 @@ type Props = {
 
 export const CardProject = ({ project }: Props) => {
     const t = useTranslations();
+    const params = useParams();
+    const locale = params?.locale as string;
     return (
         <div className="w-full group border-2 cursor-pointer dark:border-purple p-3 gap-3 flex flex-col rounded-lg h-[430px] justify-between">
             <div className="flex flex-shrink-0 hover-group:opacity-0.4 items-start justify-start w-full h-[180px] transition-all duration-300 ease-linear group-hover:opacity-55">
@@ -26,7 +29,7 @@ export const CardProject = ({ project }: Props) => {
                 </span>
             </div>
             <div className="hidden absolute top-24 left-28 group-hover:block">
-                <NavigationLink href={`/projects/${project.id}`}>
+                <NavigationLink href={`/${locale}/projects/${project.id}`}>
                     <div className="w-fit bg-lavender text-white font-medium capitalize px-5 py-1 rounded-sm transition-transform duration-300 ease-linear group-hover:scale-105">
                         {t('button.more')}
                     </div>

@@ -44,7 +44,7 @@ export const Tools = () => {
         },
     ]
     return (
-        <div className="container mx-auto px-5">
+        <div className="container mx-auto px-5" id="skills">
             <div className="flex flex-col justify-center gap-6">
                 <h2 className="w-fit bg-lavender bg-clip-text text-transparent font-bold text-3xl sm:text-5xl capitalize pb-2">{t('tool.title')}</h2>
                 <p className="text-primary font-normal md:w-[600px] dark:text-white">{t('tool.description')}</p>

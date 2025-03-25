@@ -8,7 +8,6 @@ export default function ProjectDetailPage({ params }: { params: { projectId: str
     const [data, setData] = useState<Data | null>(null);
 
     useEffect(() => {
-        // پیدا کردن پروژه مطابق با projectId
         const foundData = projectsData.find((r) => r.id === projectId);
         setData(foundData || null);
     }, [projectId]);
