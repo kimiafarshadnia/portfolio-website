@@ -16,7 +16,7 @@ type Props = {
 export const CardProject = ({ project }: Props) => {
     const t = useTranslations();
     return (
-        <div className="w-full group border-2 cursor-pointer border-purple p-3 gap-3 flex flex-col rounded-lg h-[430px] justify-between">
+        <div className="w-full group border-2 cursor-pointer dark:border-purple p-3 gap-3 flex flex-col rounded-lg h-[430px] justify-between">
             <div className="flex flex-shrink-0 hover-group:opacity-0.4 items-start justify-start w-full h-[180px] transition-all duration-300 ease-linear group-hover:opacity-55">
                 <Image src={project.image} alt={`${project.name}+project`} width={100} height={180} className=" w-full h-full rounded-lg object-cover" />
             </div>

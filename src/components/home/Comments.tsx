@@ -41,22 +41,16 @@ const comments = [
 
 export const Comments = () => {
   const t = useTranslations();
-
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Open modal
   const openModal = () => setIsModalOpen(true);
-
-  // Close modal
   const closeModal = () => setIsModalOpen(false);
 
-  // Handle form submission from modal
   const handleNewComment = (newComment: {
     name: string;
     role: string;
     comment: string;
   }) => {
-    console.log(newComment); // Here you can handle saving the data (e.g., save it in a JSON file or send it to an API)
+    console.log(newComment);
   };
 
   return (

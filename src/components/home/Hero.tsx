@@ -85,7 +85,6 @@ export const Hero = () => {
 
   return (
     <div ref={heroRef} className="container mx-auto px-5 flex justify-center">
-      {/* Glow effect */}
       <div
         ref={glowRef}
         className="hidden sm:flex w-full absolute justify-center items-center top-[20rem]"
@@ -120,7 +119,7 @@ export const Hero = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(t("hero.description"))
-                  .pauseFor(2000) // Inja pauseFor mitooni safe estefade koni
+                  .pauseFor(2000)
                   .start();
               }}
             />
